@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Tea</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- styles  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <!-- NAV  -->
+        <div class="nav container">
+            <a href="#" class="logo"><span>DINO</span>TEA</a>
+            <!-- CART ICON  -->
+
+            <div id="btn_language" onclick="togglelang()" class="btn_language">
+      Language : EN
+    </div>
+                <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title" id="your_cart">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+                    <br>
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <br>
+                <div class="total">
+                    <div class="total-title" id="total">Total</div>
+                    <div class="total-price">฿0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy" id="buy">Buy Now</button>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </header>
+            <!-- CART ICON  -->
+
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">฿0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy" id="buy">Buy Now</button>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </header>
+    
+    <br>
+    <br>
+
+      <div class="content" id="home">   <div class="textBox">       <center>       <br><span class="material-symbols-outlined">
+coffee
+</span><br><span class="title">DINOTEA</span><h2 id="title">Good tea for you</h2>
+      <br>
+      <p id="p1">You can buy  <br> <p id="p2">tea or coffee as you wish.</p> <br><p id="p3">It tastes delicious</p>
+      <br>
+      <br>
+      <button class="learn_more" type="submit" id="learn_more">Learn More</button> </center>
+      <br>
+      </div>  
+      <div class="imgBox">
+          <img src="thai_tea.png" class="dinotea" width="120%" height="120%"/>
+      </div>
+      </div> 
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title"id="product_list">Products List</h2>
+        <center>
+                	<h4 id="sp">Search Products</h4>
+                	</center>
+        	<i class="bx bx-search" aria-hidden="true"></i>
+
+	<input type="text" name="" placeholder=" " onclick="search()" id="search-item">
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="thai_tea.png" alt="" class="product-img">
+                <h2 class="product-title" id="thai_tea"> thai tea </h2>
+                                                   <i class='bx bx-star'></i>
+
+
+
+                     <i class='bx bx-star'></i>
+
+                       <i class='bx bx-star'></i>
+                         <i class='bx bx-star'></i>
+                         <i class='bx bx-star'></i>
+                         <br>
+                <span class="product-price"> ฿25</span>
+                <div class="add-cart" >
+
+                                                        <i class='bx bx-shopping-bag'></i>
+                    <h7 id="add_to_cart">Add To Cart    </h7>
+
+
+            </div>
+                </div>
+
+            <!-- BOX 2 -->
+                        <div class="product-box">
+
+
+
+                <img src="cocoa_milk.png" alt="" class="product-img">
+
+                <h2 class="product-title" id="cocoa_milk"> Cocoa Milk </h2>
+                                                   <i class='bx bx-star'></i>
+
+                     <i class='bx bx-star'></i>
+
+                       <i class='bx bx-star'></i>
+                         <i class='bx bx-star'></i>
+                         <i class='bx bx-star'></i><br>
+                <span class="product-price"> ฿25</span>
+                <div class="add-cart" >
+                                                        <i class='bx bx-shopping-bag'></i>
+                    <h7 id="add_to_cart2">Add To Cart    </h7>
+
+
+            </div>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="mint_chocolate_milk.png" alt="" class="product-img">
+                <h2 class="product-title" id="mint_chocolate">Mint <br>Chocolate </h2>
+                                                   <i class='bx bx-star'></i>
+
+                     <i class='bx bx-star'></i>
+
+                       <i class='bx bx-star'></i>
+                         <i class='bx bx-star'></i>
+                         <i class='bx bx-star'></i><br>
+                <span class="product-price">฿35</span>
+
+                <div class="add-cart" >
+                                                        <i class='bx bx-shopping-bag'></i>
+                    <h7 id="add_to_cart3">Add To Cart    </h7>
+
+
+            </div>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="taiwanese_milk_tea.png" alt="" class="product-img">
+                <h2 class="product-title" id="taiwanese_milk_tea">Taiwanese Milk Tea</h2>
+                                                                                   <i class='bx bx-star'></i>
+
+
+
+
+
+                     <i class='bx bx-star'></i>
+
+                       <i class='bx bx-star'></i>
+                         <i class='bx bx-star'></i>
+                         <i class='bx bx-star'></i><br>
+                <span class="product-price">฿35</span>
+
+                <div class="add-cart" >
+                                                        <i class='bx bx-shopping-bag'></i>
+                    <h7 id="add_to_cart4">Add To Cart    </h7>
+
+
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <div>
+        <center>
+        <h2 id="creator">Creator</h2>
+        <br>
+        <img src="kanock.jpg" width="10px" height="380px" class="kanock">
+        <br>
+        <br>
+                <h3 id="name">Mr. Kanock Archeewa</h3>
+        </center>
+    </div>
+    
+    <br>
+
+    <!-- link js  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="script.js"></script>
+</body>
+
+</html>
